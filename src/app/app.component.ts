@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularjs-on-ipfs-on-fleek';
+  block: boolean;
+
+  changeBlock() {
+    this.block = !this.block;
+  }
 }
